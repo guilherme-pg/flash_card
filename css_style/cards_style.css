@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+
+/* CARD 4 ANSWERS */
+.card_class {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 2px grey;
+    width: 600px;
+}
+.card_front_class {
+}
+
+.question_space_class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 430px;
+    height: 200px;
+}
+.question_text_class:focus::placeholder {
+    color: transparent;
+}
+
+.button_4a_class {
+    background-color: rgb(224, 213, 213);
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-around;
+}
+#button_option_1, #button_option_2, #button_option_3, #button_option_4 {
+    display: block;
+    background-color: rgb(255,204,92);
+    border: 0;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 5px;
+    height: 55px;
+    width: 250px;
+    /* padding: 20px 30px 20px 30px; */
+    cursor: pointer;
+    transition: 0.3s, color 0.3s;
+}
+
+#button_option_1:hover, #button_option_2:hover, #button_option_3:hover, #button_option_4:hover {
+    background-color: rgb(245, 181, 43);
+}
+#button_option_1:active, #button_option_2:active, #button_option_3:active, #button_option_4:active {
+    background-color: rgb(238, 149, 16);
+}
+
+.all_bottom_buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.bottom_buttons button {
+    background-color: rgb(255,204,92);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s, color 0.3s;
+}
+.bottom_buttons button:hover {
+    background-color: rgb(245, 181, 43);
+}
+.bottom_buttons button:active {
+    background-color: rgb(238, 149, 16);
+}
+
+
+
+/* CARD TRUE OR FALSE */
+
+.button_tf_class {
+    display: flex;
+    border-radius: 0 0 8px 8px;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: rgb(231, 231, 231);
+    
+}
+
+.button_tf_class button {
+    font-family: 'Amatic SC', cursive;
+    background-color: rgb(255,204,92);
+    margin: 15px 10px 15px 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 0.3s, color 0.3s;
+    width: 250px;
+}
+.button_tf_class button:hover {
+    background-color: rgb(245, 181, 43);
+}
+.button_tf_class button:active {
+    background-color: rgb(238, 149, 16);
+}
