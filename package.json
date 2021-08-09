@@ -1,12 +1,22 @@
 {
-  "name": "flashcard",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "guilherme vieira",
-  "license": "ISC",
-  "type": "module"
+    "name": "flashcard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/server.js"
+    },
+    "author": "guilherme vieira",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "consign": "^0.1.6",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
 }
