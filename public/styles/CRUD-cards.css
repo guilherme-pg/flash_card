@@ -1,0 +1,64 @@
+section {
+    background-color: brown;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.container_list_result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25%;
+}
+.container {
+    background-color: mediumvioletred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.container_select_list {
+    height: 15%;
+}
+.container_inputs {
+    width: 40%;
+}
+
+#select_list {
+    width: 75%;
+    margin-top: 5px;
+    color: black;
+    font-size: 1.2em;
+}
+#select_list option {
+    color: black;
+}
+
+
+.container_list {
+    height: 65%;
+}
+
+
+.container_crud_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 15%;
+}
+.container_crud_buttons button {
+    width: 30%;
+    color: black;
+    padding: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.5s, color 0.5s;
+}
+.container_crud_buttons button:hover {
+    transform: scale(1.1);
+}
