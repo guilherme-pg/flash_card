@@ -9,13 +9,6 @@
 body {
     background-color: darkslateblue;
 }
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-}
 .button_index_return {
     background-color: black;
     position: fixed;
@@ -33,6 +26,13 @@ main {
 }
 .button_index_return:hover {
     width: 130px;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
 }
 .container_title {
     display: flex;

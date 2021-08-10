@@ -1,0 +1,69 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+}
+.container_buttons_menu,
+.container_new_list {
+    width: 70%;
+}
+.container_buttons_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
+.container_lists_lists,
+.container_buttons_lists {
+    display: flex;
+    height: 80%;
+    margin: 10px;
+}
+.container_lists_lists {
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.container_buttons_lists {
+    align-items: center;
+    flex-direction: column;
+}
+.container_buttons_lists button {
+    width: 80%;
+}
+.button_menu_lists {
+    background-color: whitesmoke;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+    transition: 0.5s, color 0.5s;
+}
+.button_menu_lists:hover {
+    transform: scale(1.1);
+}
+.container_new_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_new_list {
+    color: black;
+    height: 25px;
+    width: 200px;
+    outline: none;
+    cursor: text;
+    padding: 7px;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+.general_button {
+    cursor: pointer;
+    margin: 10px;
+    padding: 7px;
+}
