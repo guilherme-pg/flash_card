@@ -18,7 +18,29 @@
 
 
         <div class="container_new_list">
-            <input class="input_new_list" type="text">
+            <div class="input_list_name">
+                <h3>List Name</h3>
+                <input class="input_new_list" type="text">
+            </div>
+
+
+            <div class="container_list_types">
+                <h3>List Type</h3>
+                <div class="container_inputs">
+
+                    <input type="radio" class="input_option" id="option_flash_card" name="option_activity" value="Flash Cards">
+                    <label class="general_button button_option" for="option_flash_card">Flash Card</label>
+
+                    <input type="radio" class="input_option" id="option_multipleChoice" name="option_activity" value="Multiple Choice">
+                    <label class="general_button button_option" for="option_multipleChoice">Multiple Choice</label>
+
+                    <input type="radio" class="input_option" id="option_true_false" name="option_activity" value="True or False">
+                    <label class="general_button button_option" for="option_true_false">True or False</label>
+
+                </div>
+            </div>
+
+            
             <button class="general_button button_menu_lists">New List</button>
         </div>
 
