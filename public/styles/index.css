@@ -2,7 +2,65 @@
     border: none;
     padding: 0;
     margin: 0;
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
 }
 body {
     background-color: darkslateblue;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.button_index_return {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    width: 120px;
+    font-size: 1.7em;
+    box-shadow: 2px 2px 6px 0 rgb(43, 33, 107);
+    transition: width 0.5s;
+}
+.button_index_return:hover {
+    width: 130px;
+}
+.container_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+.container_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+.general_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_index {
+    background-color: whitesmoke;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    font-size: 3em;
+    transition: 0.5s, color 0.5s;
+}
+.button_index:hover {
+    transform: scale(1.1);
 }
