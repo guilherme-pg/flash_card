@@ -11,10 +11,10 @@ section {
     margin: 10px;
 }
 .container_buttons_menu {
-    background-color: brown;
+    background-color: rgb(26, 26, 26);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     width: 40%;
 }
@@ -24,16 +24,15 @@ section {
     margin: 10px;
 }
 .container_lists_lists {
-    background-color: whitesmoke;
+    background-color: gray;
     align-items: center;
     justify-content: center;
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 75%;
 }
 .container_buttons_lists {
     height: 15%;
     width: 90%;
-    background-color: crimson;
     align-items: center;
     justify-content: space-around;
 }
@@ -46,14 +45,14 @@ section {
     margin: 20px;
     padding: 10px;
     font-size: 1.5em;
-    transition: 0.5s, color 0.5s;
+    transition: 0.2s, color 0.2s;
 }
 .button_menu_lists:hover {
     background-color: black;
     color: whitesmoke;
 }
 .container_new_list {
-    background-color: indigo;
+    background-color: rgb(26, 26, 26);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -87,8 +86,13 @@ section {
     background-color: black;
     color: whitesmoke;
 }
+.container_inputs input:checked + label {
+    background-color: green;
+    color: whitesmoke;
+}
 .input_option {
     display: none;
+    transition: 0.2s, color 0.2s;
 }
 .button_option {
     background-color: whitesmoke;

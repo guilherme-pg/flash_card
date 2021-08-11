@@ -22,7 +22,7 @@ body {
     width: 120px;
     font-size: 1.7em;
     box-shadow: 2px 2px 6px 0 rgb(43, 33, 107);
-    transition: width 0.5s;
+    transition: width 0.2s;
 }
 .button_index_return:hover {
     width: 130px;
@@ -59,7 +59,7 @@ main {
     margin: 20px;
     padding: 10px;
     font-size: 3em;
-    transition: 0.5s, color 0.5s;
+    transition: 0.2s, color 0.2s;
 }
 .button_index:hover {
     transform: scale(1.1);

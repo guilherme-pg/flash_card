@@ -17,10 +17,10 @@
         </div>
 
 
-        <div class="container_new_list">
+        <form class="container_new_list" action="/createlist" method="post">
             <div class="input_list_name">
                 <h3>List Name</h3>
-                <input class="input_new_list" type="text">
+                <input class="input_new_list" name="name_list" type="text">
             </div>
 
 
@@ -41,8 +41,8 @@
             </div>
 
             
-            <button class="general_button button_menu_lists">New List</button>
-        </div>
+            <input type="submit" class="general_button button_menu_lists" value="New List">
+        </form>
 
     </section>
 
