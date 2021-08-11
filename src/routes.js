@@ -1,4 +1,4 @@
-const ListDao = require('./app/models/DAO');
+const ListDao = require('./app/models/DAO-lists');
 const controller = require('./app/controllers/Controller');
 
 
@@ -10,8 +10,10 @@ module.exports = (app) => {
     // ROUTE: MAIN
     app.get('/', controller.main);
 
+
     // ROUTE: LISTS CRUD
     app.get('/lists', controller.lists);
+
 
     // ROUTE: CATCH THE FORM DATA
     app.post('/createlist', function(req, res) {
@@ -23,9 +25,11 @@ module.exports = (app) => {
             // .catch(erro => console.log(erro));
     });
 
+
     // ROUTE: CARDS CRUD
     app.get('/cards', controller.cards);
 
+    
     // ROUTE: PLAY OPTIONS
     app.get('/play', controller.play);
 };
