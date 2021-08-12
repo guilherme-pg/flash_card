@@ -1,9 +1,6 @@
 section {
-    background-color: brown;
     height: 80%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 10px;
 }
 .container_list_result {
@@ -14,7 +11,7 @@ section {
     width: 25%;
 }
 .container {
-    background-color: mediumvioletred;
+    background-color: rgb(26, 26, 26);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,13 +49,80 @@ section {
     overflow: auto;
 }
 
+.container_inputs {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.buttons_tabs {
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+}
+.input_resource {
+    display: none;
+}
+.button_resource {
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    font-size: 100%;
+    transition: 0.5s, color 0.5s;
+}
+.form_card {
+    height: 100%;
+    width: 100%;
+}
+.form_manage_card {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+}
+.button_manage {
+    background-color: rgb(26, 26, 26);
+}
+.form_new_card {
+    background-color: grey;
+    display: none;
+}
+.button_new {
+    background-color: grey;
+}
 
+
+
+
+
+.container_access_list {
+    display: flex;
+    align-items: center;
+    height: 15%;
+}
+.container_access_list button {
+    width: 30%;
+    color: black;
+    padding: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.5s, color 0.5s;
+}
+.container_access_list button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
 .container_crud_buttons {
+    background-color: darkblue;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    height: 15%;
+    /* height: 15%; */
 }
 .container_crud_buttons button {
     width: 30%;
@@ -71,4 +135,20 @@ section {
 .container_crud_buttons button:hover {
     background-color: black;
     color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+.showElement {
+    display: flex;
+}
+.hiddeElement {
+    display: none;
 }

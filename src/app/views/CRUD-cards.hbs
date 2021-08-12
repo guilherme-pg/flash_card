@@ -11,6 +11,7 @@
             </select>
         </div>
 
+
         <div class="container container_list">
             <form class="container_cards_list" action="/selecard" method="post">
                 {{#each cards}}
@@ -19,26 +20,52 @@
             </form>
         </div>
 
-        <div class="container container_crud_buttons">
+
+        <div class="container container_access_list">
             <button class="general_button" id="button_access">Access</button>
             
         </div>
 
     </section>
 
+
     <section class="container_inputs">
 
-        
+        <div class="buttons_tabs">
+            <input type="radio" class="input_resource" id="button_manage_card" name="option_tab"
+             value="manage">
+            <label class="button_resource button_manage" for="button_manage_card">Manage Card</label>
 
-        
-
-
-        <div class="container container_crud_buttons">
-            <button class="general_button" id="button_update">Update</button>
-            <button class="general_button" id="button_delete">Delete</button>
+            <input type="radio" class="input_resource" id="button_new_card" name="option_tab" value="new">
+            <label class="button_resource button_new" for="button_new_card">New Card</label>
         </div>
+
+
+        <form class="form_card form_manage_card" action="post">
+
+            <h1>MANAGE CARD</h1>
+
+            <div class="container container_crud_buttons">
+                <button class="general_button" id="button_update">Update</button>
+                <button class="general_button" id="button_delete">Delete</button>
+            </div>
+        </form>
+
+
+        <form class="form_card form_new_card" action="post">
+
+            <h1>NEW CARD</h1>
+
+            
+        </form>
+
+        
+
+
+        
 
     </section>
 
 </main>
+<script src="/scripts/CRUD-cards.js"></script>
 {{> scripts }}
