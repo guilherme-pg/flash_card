@@ -2,7 +2,7 @@
     
     <section>
 
-        <div class="container_buttons_menu">
+        <form class="container_buttons_menu" action="/selectlist" method="post">
 
             <div class="container_lists_lists">
                 {{#each files}}
@@ -13,11 +13,11 @@
 
 
             <div class="container_buttons_lists">
-                <input type="submit" class="general_button button_menu_lists" value="Go"></input>
-                <input type="submit" class="general_button button_menu_lists" value="Delete"></input>
+                <input type="submit" class="general_button button_menu_lists" name="input_select" value="Go">
+                <input type="submit" class="general_button button_menu_lists" name="input_select" value="Delete">
             </div>
             
-        </div>
+        </form>
 
 
         <form class="container_new_list" action="/createlist" method="post">

@@ -14,8 +14,29 @@ module.exports = (app) => {
     // ROUTE: LISTS CRUD
     app.get('/lists', controller.lists);
 
+    
+    // ROUTE: update, delete or select a list
+    app.post('/selectlist', function(req, res) {
+        bodyReqData = req.body;
+        const listDao = new ListDao();
+        console.log('YYYYY bodyReqData  ===>>>  ', bodyReqData)
 
-    // ROUTE: CATCH THE FORM DATA
+        if (bodyReqData.input_select == "Delete") {
+            listDao.delete(bodyReqData)
+                .then(res.redirect('/lists'))
+                
+        } else if (bodyReqData.input_select == "Go") {
+            // listDao.select(bodyReqData)
+            //     .then(res.redirect('/cards'))
+            console.log('GO PASS')
+
+        } else if (bodyReqData.input_select == "Rename") {
+            listDao.rename(bodyReqData)
+                .then(res.redirect('/lists'))
+        };
+    });
+
+    // ROUTE: create a list
     app.post('/createlist', function(req, res) {
         bodyReqData = req.body;
         const listDao = new ListDao();
