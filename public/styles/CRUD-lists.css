@@ -24,19 +24,42 @@ section {
     margin: 10px;
 }
 .container_lists_lists {
-    background-color: gray;
-    align-items: center;
-    justify-content: center;
+    background-color: whitesmoke;
+    flex-direction: column;
     height: 70%;
     width: 75%;
+    overflow: auto;
 }
+.input_file {
+    display: none;
+}
+.file_name {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+    font-size: 100%;
+    padding-left: 8px;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.548);
+    color: black;
+}
+.file_name:hover {
+    background-color: orangered;
+}
+.container_lists_lists input:checked + label {
+    background-color: orange;
+}
+
+
+
 .container_buttons_lists {
     height: 15%;
     width: 90%;
     align-items: center;
     justify-content: space-around;
 }
-.container_buttons_lists button {
+.container_buttons_lists input {
     width: 30%;
 }
 .button_menu_lists {

@@ -5,13 +5,16 @@
         <div class="container_buttons_menu">
 
             <div class="container_lists_lists">
-                
+                {{#each files}}
+                    <input type="radio" class="input_file" id="input_file_{{@index}}" name="option_file" value="{{file}}">
+                    <label class="file_name" for="input_file_{{@index}}">{{file}}</label>
+                {{/each}}
             </div>
 
 
             <div class="container_buttons_lists">
-                <button class="general_button button_menu_lists">Go</button>
-                <button class="general_button button_menu_lists">Delete</button>
+                <input type="submit" class="general_button button_menu_lists" value="Go"></input>
+                <input type="submit" class="general_button button_menu_lists" value="Delete"></input>
             </div>
             
         </div>

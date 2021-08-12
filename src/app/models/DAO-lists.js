@@ -4,7 +4,8 @@ class ListDao {
     
     adding(bodyReqData) {
         return new Promise((resolve, reject) => {
-            fs.writeFile(`./src/database/${bodyReqData.name_list}.txt`, `"option": "${option_activity}"`, function(err) {
+            console.log('JJJJJ  bodyReqData ==>>>  ', bodyReqData)
+            fs.writeFile(`./src/database/${bodyReqData.name_list}.txt`, `"option": "${bodyReqData.option_activity}"`, function(err) {
                 if(err) {
                     return console.log(err);
                 };
@@ -32,13 +33,19 @@ class ListDao {
 
     readDir() {
         return new Promise((resolve, reject) => {
-            fs.readdir("./src/database/", function(err) {
+            var files = fs.readdirSync("./src/database/", function(err) {
                 if(err) {
                     return console.log(err);
                 };
                 console.log("The FOLDER was OPENED to read!");
             });
-            return resolve(true);
+            var filesObj = []
+            files.forEach(element => {
+                filesObj.push({file: element.slice(0, -4)})
+            });
+
+            console.log('ZZZZZZZZZZZ  filesObj ===>>>>  ', filesObj)
+            return resolve(filesObj);
         });
     };
     

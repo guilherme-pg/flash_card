@@ -1,3 +1,5 @@
+const ListDao = require('../models/DAO-lists')
+
 module.exports = {
    
    async main(req, res){
@@ -14,10 +16,13 @@ module.exports = {
    },
    async lists(req, res){
       try{
+         const listDao = new ListDao();
+         files = await listDao.readDir();
          await res.render('CRUD-lists',{
             title: "Lists",
             layout: 'mainLayouts',
-            style: "CRUD-lists.css"
+            style: "CRUD-lists.css",
+            files: files
          }) 
          
       }catch(err){

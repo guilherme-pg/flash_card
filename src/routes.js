@@ -18,7 +18,6 @@ module.exports = (app) => {
     // ROUTE: CATCH THE FORM DATA
     app.post('/createlist', function(req, res) {
         bodyReqData = req.body;
-        console.log('AAAAAA   bodyReqData  ==>>  ', bodyReqData)
         const listDao = new ListDao();
         listDao.adding(bodyReqData)
             .then(res.redirect('/lists'))
