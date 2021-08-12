@@ -5,18 +5,22 @@
         <div class="container container_select_list">
             <label for="select_list">Select a List</label>
             <select name="select_list" id="select_list">
-                <option value="aaaa">aaaa</option>
-                <option value="bbb">bbbb</option>
-                <option value="cc">cccc</option>
+                {{#each files}}
+                    <option value="{{file}}">{{file}}</option>
+                {{/each}}
             </select>
         </div>
 
         <div class="container container_list">
-
+            <form class="container_cards_list" action="/selecard" method="post">
+                {{#each cards}}
+                    <input type="submit" class="input_name_card" value="{{cardname}}">
+                {{/each}}
+            </form>
         </div>
 
         <div class="container container_crud_buttons">
-            <button class="general_button" id="button_create">New Card</button>
+            <button class="general_button" id="button_access">Access</button>
             
         </div>
 

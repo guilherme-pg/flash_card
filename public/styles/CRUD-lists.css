@@ -27,7 +27,7 @@ section {
     background-color: whitesmoke;
     flex-direction: column;
     height: 70%;
-    width: 75%;
+    width: 85%;
     overflow: auto;
 }
 .input_file {

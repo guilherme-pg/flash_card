@@ -31,10 +31,13 @@ module.exports = {
    },
    async cards(req, res){
       try{
+         const listDao = new ListDao();
+         files = await listDao.readDir();
          await res.render('CRUD-cards',{
             title: "Cards",
             layout: 'mainLayouts',
-            style: "CRUD-cards.css"
+            style: "CRUD-cards.css",
+            files: files
          }) 
          
       }catch(err){

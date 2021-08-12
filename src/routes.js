@@ -25,7 +25,7 @@ module.exports = (app) => {
             listDao.delete(bodyReqData)
                 .then(res.redirect('/lists'))
                 
-        } else if (bodyReqData.input_select == "Go") {
+        } else if (bodyReqData.input_select == "Manage") {
             // listDao.select(bodyReqData)
             //     .then(res.redirect('/cards'))
             console.log('GO PASS')

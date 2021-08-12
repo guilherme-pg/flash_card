@@ -42,6 +42,15 @@ section {
 .container_list {
     height: 65%;
 }
+.container_cards_list {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+    overflow: auto;
+}
 
 
 .container_crud_buttons {
@@ -60,5 +69,6 @@ section {
     transition: 0.5s, color 0.5s;
 }
 .container_crud_buttons button:hover {
-    transform: scale(1.1);
+    background-color: black;
+    color: whitesmoke;
 }
